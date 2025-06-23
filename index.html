@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="poppins container mx-auto bg-slate-50">
+<body class="poppins container mx-auto bg-slate-50 px-2 lg:px-0">
 
     <!--        -->
     <!-- Navbar -->
@@ -45,7 +45,7 @@
     <!--      -->
     <!-- Main -->
     <!--      -->
-    <main class="mt-12 grid grid-cols-4 gap-8">
+    <main class="mt-2 lg:mt-12 grid grid-cols-1 lg:grid-cols-4 gap-2 lg:gap-8">
 
         <!-- Item (1)-->
         <div class="flex items-center justify-between shadow-md rounded-md p-6 bg-white">
@@ -92,135 +92,137 @@
         </div>
 
         <!-- Item (5) -->
-        <div class="col-span-2 shadow-md p-6 rounded-md bg-white">
+        <div class="lg:col-span-2 shadow-md p-6 rounded-md bg-white">
             <h3 class="text-2xl font-semibold">Today's Tasks</h3>
 
             <div class="mt-4 flex flex-col gap-2">
                 <!-- (t1) -->
                 <div class="flex items-center justify-between">
-                    <span class="flex items-center gap-2 font-medium text-slate-500">
+                    <span class="flex items-center gap-2 font-medium text-sm md:text-base text-slate-500">
                         <figure class="w-2 h-2 bg-teal-500 rounded-full"></figure> Complete project proposal
                     </span>
-                    <span class="text-slate-500 font-mono">High</span>
+                    <span class="text-slate-500 font-mono text-xs md:text-base">High</span>
                 </div>
 
                 <!-- (t2) -->
                 <div class="flex items-center justify-between">
-                    <span class="flex items-center gap-2 font-medium text-slate-500">
+                    <span class="flex items-center gap-2 font-medium text-sm md:text-base text-slate-500">
                         <figure class="w-2 h-2 bg-amber-500 rounded-full"></figure> Review team updates
                     </span>
-                    <span class="text-slate-500 font-mono">Medium</span>
+                    <span class="text-slate-500 font-mono text-xs md:text-base">Medium</span>
                 </div>
 
                 <!-- (t3) -->
                 <div class="flex items-center justify-between">
-                    <span class="flex items-center gap-2 font-medium text-slate-500">
+                    <span class="flex items-center gap-2 font-medium text-sm md:text-base text-slate-500">
                         <figure class="w-2 h-2 bg-sky-500 rounded-full"></figure> Prepare for client meeting
                     </span>
-                    <span class="text-slate-500 font-mono">Low</span>
+                    <span class="text-slate-500 font-mono text-xs md:text-base">Low</span>
                 </div>
             </div>
         </div>
 
         <!-- Item (6) -->
-        <div class="col-span-2 shadow-md p-6 rounded-md bg-white">
-            <h3 class="text-2xl font-semibold">Today's Tasks</h3>
+        <div class="lg:col-span-2 shadow-md p-6 rounded-md bg-white">
+            <h3 class="text-2xl font-semibold">Task List</h3>
 
-            <table class="mt-6 w-full text-left border border-slate-200 rounded-lg overflow-hidden">
-                <thead class="bg-slate-100">
-                    <tr>
-                        <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Task Title
-                        </th>
-                        <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Priority
-                        </th>
-                        <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Team</th>
-                        <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Created At
-                        </th>
-                    </tr>
-                </thead>
-
-                <tbody class="divide-y divide-slate-200">
-                    <!--ROW 1-->
-                    <tr class="hover:bg-slate-50 transition hover:cursor-pointer">
-                        <td class="px-4 py-3">
-                            <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
-                                <span class="w-2 h-2 bg-sky-500 rounded-full"></span>
-                                Test Low Task
-                            </div>
-                        </td>
-                        <td class="px-4 py-3">
-                            <span
-                                class="text-red-500 bg-red-50 px-3 py-1 text-xs font-semibold rounded-full">Low</span>
-                        </td>
-                        <td class="px-4 py-3">
-                            <div class="flex -space-x-3">
+            <div class="w-full overflow-x-auto">
+                <table class="mt-6 min-w-[640px] text-left border border-slate-200 rounded-lg overflow-hidden">
+                    <thead class="bg-slate-100">
+                        <tr>
+                            <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Task
+                                Title</th>
+                            <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Priority
+                            </th>
+                            <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Team
+                            </th>
+                            <th class="px-4 py-3 text-slate-600 font-semibold text-sm uppercase tracking-wider">Created
+                                At</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <!--ROW 1-->
+                        <tr class="hover:bg-slate-50 transition hover:cursor-pointer">
+                            <td class="px-4 py-3">
+                                <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                                    <span class="w-2 h-2 bg-sky-500 rounded-full"></span>
+                                    Test Low Task
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
                                 <span
-                                    class="bg-teal-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">S</span>
-                                <span
-                                    class="bg-amber-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">A</span>
-                                <span
-                                    class="bg-sky-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">E</span>
-                            </div>
-                        </td>
-                        <td class="px-4 py-3 text-sm text-slate-500">12 hours ago</td>
-                    </tr>
-
-
-
+                                    class="text-red-500 bg-red-50 px-3 py-1 text-xs font-semibold rounded-full">Low</span>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div class="flex -space-x-3">
+                                    <span
+                                        class="bg-teal-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">S</span>
+                                    <span
+                                        class="bg-amber-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">A</span>
+                                    <span
+                                        class="bg-sky-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">E</span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-slate-500">12 hours ago</td>
+                        </tr>
 
 
-                    <!-- ROW 2-->
-                    <tr class="hover:bg-slate-50 transition hover:cursor-pointer">
-                        <td class="px-4 py-3">
-                            <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
-                                <span class="w-2 h-2 bg-sky-500 rounded-full"></span>
-                                Graviton 007
-                            </div>
-                        </td>
-                        <td class="px-4 py-3">
-                            <span
-                                class="text-slate-500 bg-slate-50 px-3 py-1 text-xs font-semibold rounded-full">Normal</span>
-                        </td>
-                        <td class="px-4 py-3">
-                            <div class="flex -space-x-3">
-                                <span
-                                    class="bg-teal-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">S</span>
-                                <span
-                                    class="bg-amber-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">A</span>
-                                <span
-                                    class="bg-sky-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">E</span>
-                            </div>
-                        </td>
-                        <td class="px-4 py-3 text-sm text-slate-500">12 hours ago</td>
-                    </tr>
 
 
-                    <!--ROW 3-->
-                    <tr class="hover:bg-slate-50 transition hover:cursor-pointer">
-                        <td class="px-4 py-3">
-                            <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
-                                <span class="w-2 h-2 bg-sky-500 rounded-full"></span>
-                                Phitron Assignment 3
-                            </div>
-                        </td>
-                        <td class="px-4 py-3">
-                            <span
-                                class="text-green-500 bg-green-50 px-3 py-1 text-xs font-semibold rounded-full">High</span>
-                        </td>
-                        <td class="px-4 py-3">
-                            <div class="flex -space-x-3">
+
+                        <!-- ROW 2-->
+                        <tr class="hover:bg-slate-50 transition hover:cursor-pointer">
+                            <td class="px-4 py-3">
+                                <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                                    <span class="w-2 h-2 bg-sky-500 rounded-full"></span>
+                                    Graviton 007
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
                                 <span
-                                    class="bg-teal-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">S</span>
+                                    class="text-slate-500 bg-slate-50 px-3 py-1 text-xs font-semibold rounded-full">Normal</span>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div class="flex -space-x-3">
+                                    <span
+                                        class="bg-teal-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">S</span>
+                                    <span
+                                        class="bg-amber-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">A</span>
+                                    <span
+                                        class="bg-sky-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">E</span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-slate-500">12 hours ago</td>
+                        </tr>
+
+
+                        <!--ROW 3-->
+                        <tr class="hover:bg-slate-50 transition hover:cursor-pointer">
+                            <td class="px-4 py-3">
+                                <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                                    <span class="w-2 h-2 bg-sky-500 rounded-full"></span>
+                                    Phitron Assignment 3
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
                                 <span
-                                    class="bg-amber-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">A</span>
-                                <span
-                                    class="bg-sky-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">E</span>
-                            </div>
-                        </td>
-                        <td class="px-4 py-3 text-sm text-slate-500">2 hours ago</td>
-                    </tr>
-                </tbody>
-            </table>
+                                    class="text-green-500 bg-green-50 px-3 py-1 text-xs font-semibold rounded-full">High</span>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div class="flex -space-x-3">
+                                    <span
+                                        class="bg-teal-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">S</span>
+                                    <span
+                                        class="bg-amber-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">A</span>
+                                    <span
+                                        class="bg-sky-400 text-white text-sm px-3 py-1 border-2 border-white rounded-full">E</span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-slate-500">2 hours ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </main>
